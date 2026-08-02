@@ -16,7 +16,7 @@ const menuItems = [
   {
     id: "dashboard",
     label: "Dashboard",
-    href: "/dasboard",
+    href: "/dashboard",
     icon: LayoutDashboard,
   },
   {

@@ -45,7 +45,6 @@ export interface LogoutResponse {
   message: string;
 }
 
-// Re-export form data inferred from Zod schemas
 import type {
   RegisterFormData as _RegisterFormData,
   LoginFormData as _LoginFormData,

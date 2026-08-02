@@ -8,4 +8,10 @@ export const API_ENDPOINTS = {
     ME: "/api/backend/auth/profile",
     LOGOUT: "/api/backend/auth/logout",
   },
+  BOOKS: {
+    CREATE: "/api/backend/books/create",
+    GET_ALL: "/api/backend/books/get-books",
+    UPDATE: (id: string) => `/api/backend/books/update/${id}`,
+    DELETE: (id: string) => `/api/backend/books/delete/${id}`,
+  },
 };
