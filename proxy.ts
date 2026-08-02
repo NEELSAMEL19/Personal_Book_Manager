@@ -45,7 +45,7 @@ export async function proxy(req: NextRequest) {
   const user = token ? await verifyToken(token) : null;
 
   if (isLoginPage && user) {
-    return NextResponse.redirect(new URL("/analytics", req.url));
+    return NextResponse.redirect(new URL("/dasboard", req.url));
   }
 
   if (!isPublicRoute && !user) {
