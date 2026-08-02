@@ -41,7 +41,7 @@ export const Button = ({
     <button
       className={`${baseStyles} ${variants[variant]} ${sizes[size]} ${
         fullWidthOnMobile ? "w-full sm:w-auto" : ""
-      } ${className} !rounded-md`}
+      } ${className} rounded-md!`}
       disabled={disabled || isLoading}
       {...props}
     >
