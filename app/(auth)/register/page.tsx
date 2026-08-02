@@ -1,9 +1,12 @@
-import React from 'react'
+import Register from "@/features/Auth/Register/Register";
+import React from "react";
 
 const page = () => {
   return (
-    <div>page</div>
-  )
-}
+    <div>
+      <Register />
+    </div>
+  );
+};
 
-export default page
+export default page;
