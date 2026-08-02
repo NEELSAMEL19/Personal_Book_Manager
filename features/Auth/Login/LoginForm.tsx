@@ -108,8 +108,6 @@ const LoginForm = () => {
     try {
       const response = await loginMutation.mutateAsync(formData);
 
-      const role = response?.data?.role ?? response?.data?.auth?.role;
-
       if (response?.success) {
         router.replace("/analytics");
         return;
