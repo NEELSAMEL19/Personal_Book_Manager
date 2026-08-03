@@ -1,10 +1,8 @@
 import RegisterForm from "./RegisterForm";
-import RegisterTheme from "./RegisterTheme";
 
 const Register = () => {
   return (
-    <div className="flex h-screen w-screen">
-      <RegisterTheme />
+    <div className="flex justify-center items-center h-screen w-screen">
       <RegisterForm />
     </div>
   );
