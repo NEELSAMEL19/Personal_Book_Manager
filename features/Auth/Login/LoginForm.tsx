@@ -121,8 +121,7 @@ const LoginForm = () => {
   };
 
   return (
-    <div className="w-full min-[850px]:w-[70%] flex items-center justify-center h-full p-6 ">
-      <div className="w-full max-w-md ">
+<div className="w-full min-[850px]:w-[70%] flex items-center justify-center h-screen p-6">      <div className="w-full max-w-md ">
         <form
           onSubmit={(e) => {
             e.preventDefault();

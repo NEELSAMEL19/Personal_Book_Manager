@@ -10,15 +10,15 @@ Personal Book Manager is a full-stack application for tracking books you want to
 
 ### Dashboard
 
-![Dashboard](.github/images/Dashboard.png)
+![Dashboard](public/.github/images/Dashboard.png)
 
 ### Add Book
 
-![Add Book](.github/images/Add-Book.png)
+![Add Book](public/.github/images/Add-Book.png)
 
 ### Edit Book
 
-![Edit Book](.github/images/Edit-Book.png)
+![Edit Book](public/.github/images/Edit-Book.png)
 
 ## Features
 
