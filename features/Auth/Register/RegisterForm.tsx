@@ -119,7 +119,7 @@ const RegisterForm = () => {
 
     try {
       await registerMutation.mutateAsync(formData);
-      router.replace("/dasboard");
+      router.replace("/dashboard");
     } catch (error) {
       console.error("Registration failed:", error);
     }

@@ -109,7 +109,7 @@ const LoginForm = () => {
       const response = await loginMutation.mutateAsync(formData);
 
       if (response?.success) {
-        router.replace("/dasboard");
+        router.replace("/dashboard");
         return;
       }
 
