@@ -1,10 +1,8 @@
 import LoginForm from "./LoginForm";
-import LoginTheme from "./LoginTheme";
 
 const Login = () => {
   return (
-    <div className="flex h-screen w-screen overflow-hidden">
-      <LoginTheme />
+    <div className="flex h-screen w-screen">
       <LoginForm />
     </div>
   );
