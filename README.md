@@ -6,6 +6,20 @@ A modern personal library management app built with Next.js and a secure Express
 
 Personal Book Manager is a full-stack application for tracking books you want to read, are currently reading, or have already finished. The frontend provides a clean dashboard experience, while the backend handles authentication and protected book management.
 
+## Screenshots
+
+### Dashboard
+
+![Dashboard](.github/images/Dashboard.png)
+
+### Add Book
+
+![Add Book](.github/images/Add-Book.png)
+
+### Edit Book
+
+![Edit Book](.github/images/Edit-Book.png)
+
 ## Features
 
 - User registration and login
