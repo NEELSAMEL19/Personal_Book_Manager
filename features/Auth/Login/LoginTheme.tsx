@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const LoginTheme = () => {
   return (
-    <div className="relative hidden min-[850px]:block w-[30%] h-screen overflow-hidden">      <Image
+    <div className="relative min-[850px]:block w-[30%] h-screen overflow-hidden">      <Image
         src="/login_bg.png"
         alt="Login theme"
         fill
