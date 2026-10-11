@@ -1,94 +1,186 @@
-# Personal Book Manager
+### Personal Book Manager 
+<em>A modern personal library application to organize your reading life, track book progress, and manage your collection effortlessly.</em>
 
-A modern personal library management app built with Next.js and a secure Express backend. It helps users register, log in, and manage their own book collection with statuses, tags, and an intuitive dashboard.
 
-## Overview
+<p align="left">
+  <img src="https://img.shields.io/badge/Next.js-000000?style=flat&logo=nextdotjs&logoColor=white" alt="Next.js" />
+  &nbsp;
+  <img src="https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB" alt="React" />
+  &nbsp;
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white" alt="TypeScript" />
+  &nbsp;
+  <img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat&logo=tailwindcss&logoColor=white" alt="Tailwind CSS" />
+  &nbsp;
+  <img src="https://img.shields.io/badge/Redux_Toolkit-764ABC?style=flat&logo=redux&logoColor=white" alt="Redux Toolkit" />
+  &nbsp;
+  <img src="https://img.shields.io/badge/React_Query-FF4154?style=flat&logo=reactquery&logoColor=white" alt="React Query" />
+</p>
 
-Personal Book Manager is a full-stack application for tracking books you want to read, are currently reading, or have already finished. The frontend provides a clean dashboard experience, while the backend handles authentication and protected book management.
+<hr />
 
-## Screenshots
+### 🚀 About the project
 
-### Dashboard
+**Personal Book Manager** is a frontend-focused reading tracker designed to help users keep a personalized library of books they want to read, are currently reading, or have already completed. It offers a clean dashboard experience with structured book management and status tracking.
 
-![Dashboard](public/.github/images/Dashboard.png)
+### ✨ Features
 
-### Add Book
+<table>
+  <tr>
+    <td valign="top">
 
-![Add Book](public/.github/images/Add-Book.png)
+- ✅ User registration and login flow
+- ✅ Add, edit and delete books
+- ✅ Track reading status: To Read, Reading, Read
+- ✅ Organize books with custom tags
+- ✅ Personalized dashboard overview
 
-### Edit Book
+</td>
+    <td valign="top">
 
-![Edit Book](public/.github/images/Edit-Book.png)
+- ✅ Search and filter books by status or tag
+- ✅ Protected routes for authenticated users
+- ✅ Responsive modern UI
+- ✅ Secure API-based frontend integration
+- ✅ Smooth notifications and interactions
 
-## Features
+</td>
+  </tr>
+</table>
 
-- User registration and login
-- Secure authentication with JWT-based sessions
-- Protected dashboard routes
-- Add, edit, and delete books
-- Track book status: To Read, Reading, Read
-- Organize books with tags
-- Responsive and modern UI
 
-## Tech Stack
+### 🛠️ Tech Stack
 
-### Frontend
-- Next.js 16
-- React 19
-- TypeScript
-- Tailwind CSS
-- Redux Toolkit
-- React Query
-- Axios
-- Framer Motion
-- React Toastify
+| Frontend | State & Data | UI & Utilities |
+|:--------:|:------------:|:--------------:|
+| Next.js, React, TypeScript, Tailwind CSS | Redux Toolkit, React Query, Axios | Framer Motion, React Toastify, Lucide React |
 
-## Project Structure
+### 📷 Screenshots
+
+<p align="center">
+  <img src="public/.github/images/Dashboard.png" alt="Dashboard" width="33%">
+  <img src="public/.github/images/Add-Book.png" alt="Add Book" width="33%">
+  <img src="public/.github/images/Edit-Book.png" alt="Edit Book" width="33%">
+</p>
+
+### 🚀 Getting Started
+
+<table>
+  <tr>
+    <td valign="top" width="40%">
+
+#### Prerequisites
+
+- **Node.js** (v18+)
+- **npm** (v9+)
+- **Backend API** running for auth and book operations
+
+#### ⚙️ Environment Variables
+
+Create a `.env.local` file in the project root and add:
+
+```env
+JWT_SECRET=your_secret_key
+API_BASE_URL=http://localhost:3030
+NEXT_PUBLIC_API_BASE_URL=http://localhost:3030
+```
+
+> 💡 Never commit your `.env.local` file.
+
+</td>
+    <td valign="top" width="60%">
+
+#### Installation
+
+1. Clone the repository
+
+```bash
+   git clone https://github.com/your-username/personal-book-manager.git
+   cd personal-book-manager
+```
+
+2. Install dependencies
+
+```bash
+   npm install
+```
+
+3. Start the frontend
+
+```bash
+   npm run dev
+```
+
+4. Open the app in your browser
+
+```bash
+   http://localhost:3000
+```
+
+</td>
+  </tr>
+</table>
+
+### 🔗 API Endpoints (Base URL: `NEXT_PUBLIC_API_BASE_URL`)
+
+<table>
+  <tr>
+    <td valign="top" width="60%">
+
+| Method | Endpoint | Description | Auth Required |
+|:------:|----------|-------------|:-------------:|
+| `POST` | `/auth/register` | Register a new user | No |
+| `POST` | `/auth/login` | Login user | No |
+| `GET` | `/books` | Get all books for the user | Yes |
+| `POST` | `/books` | Add a new book | Yes |
+| `PUT` | `/books/:id` | Update a book | Yes |
+| `DELETE` | `/books/:id` | Delete a book | Yes |
+
+</td>
+    <td valign="top" width="40%">
+
+#### 📁 Project Structure
 
 ```text
 Personal_Book_Manager/
 ├── app/                  # App routes and layouts
 ├── components/           # Reusable UI components
-├── features/             # Feature-based modules
+├── features/             # Feature-specific modules
 ├── hooks/                # Custom hooks
 ├── service/              # API services and route config
-├── store/                # Redux store and hooks
-└── types/                # Shared TypeScript types
+├── store/               # Redux store and state logic
+├── types/                # Shared TypeScript interfaces
+├── public/               # Static assets
+├── utils/                # Utility helpers
+├── .env.example
+├── .gitignore
+├── package.json
+├── next.config.ts
+├── tsconfig.json
+└── README.md
 ```
 
-## Installation
+</td>
+  </tr>
+</table>
 
-1. Clone the repository
-2. Navigate to the frontend folder
-3. Install dependencies:
+<table>
+  <tr>
+    <td valign="top" width="50%">
 
-```bash
-npm install
-```
+#### 👥 Contributing
 
-4. Create a `.env.local` file with:
+Contributions are welcome! Feel free to open issues or submit pull requests for features, bug fixes, and UI improvements.
 
-```env
-JWT_SECRET=your-secret-key
-API_BASE_URL=http://localhost:3030
-NEXT_PUBLIC_API_BASE_URL=http://localhost:3030
-```
+</td>
+    <td valign="top" width="50%">
 
-5. Start the development server:
+#### 📄 License
 
-```bash
-npm run dev
-```
+This project is licensed under the [MIT License](LICENSE).
 
-Open http://localhost:3000 to view the app.
+</td>
+  </tr>
+</table>
 
-## Usage
 
-- Register a new account
-- Log in to access your dashboard
-- Add books to your personal collection
-- Update status or tags as you progress
-
-## Notes
-
-This frontend expects the backend server to be running so authentication and book operations can work properly.
+Made with ❤️ by [Neel Samel](https://github.com/NEELSAMEL19)
